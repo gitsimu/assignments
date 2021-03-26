@@ -63,13 +63,23 @@
 
 .resultContainer {
   position: absolute;
-  padding: 5px 10px;
+  padding: 8px 0;
   background-color: #000;
-  bottom: 10px;
-  border-radius: 5px;
+  bottom: 0;
   min-width: 300px;
   text-align: left;
+  width: 100%;
+  margin: 0 !important;
 }
 .resultContainer > div {
-  padding: 3px;
+  padding: 8px 20px;
+}
+.resultContainer > div > div {
+  display: inline-flex;
+  width: 150px;
+}
+.resultContainer > div span:not(:empty) {
+  background: #006cff;
+  padding: 4px 8px;
+  border-radius: 5px;
 }

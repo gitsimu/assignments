@@ -13,7 +13,7 @@ function App() {
     { value: 'value4', label: 'sed do eiusmod tempor' },
     { value: 'value5', label: 'incididunt ut labore et' },
   ]
-  const option2 = [
+  const options2 = [
     { value: 'value1', label: 'Lorem ipsum' },
     { value: 'value2', label: 'dolor sit amet', disabled: true },
     { value: 'value3', label: 'consectetur adipisicing elit', disabled: true },
@@ -39,26 +39,26 @@ function App() {
               <SelectBox options={options1} onChange={(v) => {setValue1(v)}} size={'small'}/>
             </div>
             <div className="resultContainer">
-              <div>SELECTED LABEL : {value1.label}</div>
-              <div>SELECTED VALUE : {value1.value}</div>
+              <div><div>SELECTED LABEL</div><span>{value1.label}</span></div>
+              <div><div>SELECTED VALUE</div><span>{value1.value}</span></div>
             </div>
           </div>
           <div>
           <div>
             <div style={{marginBottom: 3, color: '#000'}}>Large</div>
-              <SelectBox options={option2} onChange={(v) => {setValue2(v)}} size={'large'}/>
+              <SelectBox options={options2} onChange={(v) => {setValue2(v)}} size={'large'}/>
             </div>
             <div>
               <div style={{marginBottom: 3, color: '#000'}}>Medium</div>
-              <SelectBox options={option2} onChange={(v) => {setValue2(v)}} size={'medium'}/>
+              <SelectBox options={options2} onChange={(v) => {setValue2(v)}} size={'medium'}/>
             </div>
             <div>
               <div style={{marginBottom: 3, color: '#000'}}>Small</div>
-              <SelectBox options={option2} onChange={(v) => {setValue2(v)}} size={'small'}/>
+              <SelectBox options={options2} onChange={(v) => {setValue2(v)}} size={'small'}/>
             </div>
             <div className="resultContainer">
-              <div>SELECTED LABEL : {value2.label}</div>
-              <div>SELECTED VALUE : {value2.value}</div>
+              <div><div>SELECTED LABEL</div><span>{value2.label}</span></div>
+              <div><div>SELECTED VALUE</div><span>{value2.value}</span></div>
             </div>
           </div>
         </div>

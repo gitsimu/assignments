@@ -5,7 +5,6 @@ const SelectBox = ({...props}) => {
   const {options, size, isDisabled, onChange} = props  
   const [showOptions, setShowOptions] = React.useState(false)
   const [selectedValue, setSelectedValue] = React.useState({label: '', value: ''})
-  // const [selectBoxState, setSelectBoxState] = React.useState()
 
   const toggleOptionWindow = (s) => {
     console.log(typeof(s))
