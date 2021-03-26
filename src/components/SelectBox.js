@@ -37,7 +37,7 @@ const SelectBox = ({...props}) => {
               toggleOptionWindow(false)
             }, 200)
           }}
-          onClick={toggleOptionWindow}
+          onClick={() => {toggleOptionWindow()}}
           onChange={handleChange}
           value={selectedValue?.label}
         />
