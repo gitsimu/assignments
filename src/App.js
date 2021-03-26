@@ -19,6 +19,11 @@ function App() {
     { value: 'value3', label: 'consectetur adipisicing elit', disabled: true },
     { value: 'value4', label: 'sed do eiusmod tempor' },
     { value: 'value5', label: 'incididunt ut labore et' },
+    { value: 'value6', label: 'Lorem ipsum' },
+    { value: 'value7', label: 'dolor sit amet', disabled: true },
+    { value: 'value8', label: 'consectetur adipisicing elit', disabled: true },
+    { value: 'value9', label: 'sed do eiusmod tempor' },
+    { value: 'value0', label: 'incididunt ut labore et' },
   ]
 
   return (
