@@ -38,6 +38,10 @@ function App() {
               <div style={{marginBottom: 3}}>Small</div>
               <SelectBox options={options1} onChange={(v) => {setValue1(v)}} size={'small'}/>
             </div>
+            <div>
+              <div style={{marginBottom: 3}}>Disabled</div>
+              <SelectBox options={options1} onChange={(v) => {setValue1(v)}} isDisabled={true}/>
+            </div>
             <div className="resultContainer">
               <div><div>SELECTED LABEL</div><span>{value1.label}</span></div>
               <div><div>SELECTED VALUE</div><span>{value1.value}</span></div>
@@ -55,6 +59,10 @@ function App() {
             <div>
               <div style={{marginBottom: 3, color: '#000'}}>Small</div>
               <SelectBox options={options2} onChange={(v) => {setValue2(v)}} size={'small'}/>
+            </div>
+            <div>
+              <div style={{marginBottom: 3, color: '#000'}}>Disabled</div>
+              <SelectBox options={options2} onChange={(v) => {setValue2(v)}} isDisabled={true}/>
             </div>
             <div className="resultContainer">
               <div><div>SELECTED LABEL</div><span>{value2.label}</span></div>
