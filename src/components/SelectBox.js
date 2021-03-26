@@ -29,8 +29,8 @@ const SelectBox = ({...props}) => {
   }, [])
 
   return (
-    <div className={`selectBoxContainer ${size && size.toLowerCase()}`}>
-      <div className={isDisabled ? "selectBox disabled" : "selectBox"}>
+    <div className={`selectBoxContainer ${size ? size.toLowerCase() : ''}`}>
+      <div className={`selectBox ${isDisabled ? 'disabled' : ''}`}>
         <input type="text"
           onBlur={() => {
             setTimeout(() => {
